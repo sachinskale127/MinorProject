@@ -21,3 +21,13 @@ def administrator(request):
     params = {'form':form, 'image':image}
     return render(request, 'admin.html',params)
 
+def calendar(request):
+    return render(request, 'calendar.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+
+def contact(request):
+    return render(request, 'contact.html')
+
