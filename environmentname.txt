@@ -1,1 +1,14 @@
 this project is hosted on the virtual environment named "project"
+
+
+So this is our project and there are some modifications and beautification needed and 
+we are good to go with our first delieverable .
+currently some features have not been added like empty places in the main slide show page where we will 
+fill it with our news feed and regular updates from department side.
+We are currently working with Images currently and after our first delieverable we will work on videos 
+on the slideshow as well and do relevant modifications.
+Thank You 
+
+from: 
+Ganesh Chavan (58)
+Sachin Kale (66)

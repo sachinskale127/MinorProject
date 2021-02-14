@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .models import Image
 from datetime import date
 from .forms import ImageForm
+import datetime
 
 def index(request):
     image = Image.objects.all()
@@ -30,4 +31,13 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def test(request):
+    image = Image.objects.all()
+    no_of_image = len(image)
+    dates = date.today()
+    # times = date.time
+    times = datetime.datetime.now().strftime('%H:%M:%S')
+    params = {'product': image, 'number': no_of_image, 'dates':dates, 'times':times}
+    return render(request, 'test.html', params)
 

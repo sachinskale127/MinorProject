@@ -10,8 +10,6 @@ urlpatterns = [
     path('calendar/', views.calendar, name='calendar'),
     path('AboutUs/', views.about, name='about'),
     path('ContactUs/', views.contact, name='contact'),
-
-
-
+    path('test/', views.test, name='test'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

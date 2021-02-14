@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <style> -->
+   <!-- /* #tab {
+          float: left;
+          border: 1px solid rgb(56, 77, 105);
+          background-color: #e3f2fd;
+          width: 15%;
+          height: 400px;
+          margin: 0px 0px 0px 0px;
+
+        }
+    #tab2 {
+        float: left;
+        border: 1px solid rgb(56, 77, 105);
+        background-color: #e3f2fd;
+        width: 15%;
+        height: 400px;
+        margin: 0px 0px 0px 0px;
+
+    }
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: fixed;
+  margin: 50px 50px;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#slideimage{
+    height: 500px;
+    width:500px
+}
+  </style>
+</head>
+<body>
+ 
+<div class="container-fluid">
+  <h2>Panel Group</h2>
+  <p>The panel-group class clears the bottom-margin. Try to remove the class and see what happens.</p>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Panel Header</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+    <div class="panel panel-default" id="tab" style="width:200px">
+      <div class="panel-heading">Thought of the day.</div>
+      <div class="panel-body">Kafir hunu bhaanda marnu ramro</div>
+    </div> */ -->
+<!-- Slideshow -->
+ <!-- Slideshow container -->
+ <!-- <div class="slideshow-container"> -->
+
+    <!-- Full-width images with number and caption text -->
+    <!-- <div class="mySlides fade" id="slideimage">
+      <div class="numbertext">1 / 3</div>
+      <img src="{% static 'ganesh.jpg' %}">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade" id="slideimage">
+      <div class="numbertext">2 / 3</div>
+      <img src="{% static 'sachin.jpg' %}">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade" id="slideimage">
+      <div class="numbertext">3 / 3</div>
+      <img src="{% static 'Developers.jpg' %}">
+      <div class="text">Caption Three</div>
+    </div> -->
+  
+    <!-- Next and previous buttons -->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br> -->
+  
+  <!-- The dots/circles -->
+  <!-- <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>  -->
+<!-- slide ends -->
+
+    <!-- <div class="panel panel-default" id="tab2" style="width:200px">
+      <div class="panel-heading">Panel Header</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+  </div>
+</div> -->
+
+<!-- javascript starts -->
+<!-- <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+} 
+</script> -->
+<!-- javascript ends -->
+<style>
+    #devimg{
+        height: 400px;
+        width: 400px;
+        position: fixed;
+        margin-left: 0px;
+        margin-right: 0px;
+        /* margin: 200px; */
+    }
+    /* #news{
+      height: 500px;
+    } */
+    #tab1 {
+          float: left;
+          border: 1px solid rgb(56, 77, 105);
+          background-color: #e3f2fd;
+          width: 15%;
+          height: 400px;
+          margin: 0px 0px 0px 0px;
+
+        }
+        #tab2 {
+          float: left;
+          border: 1px solid rgb(56, 77, 105);
+          background-color: #e3f2fd;
+          width: 15%;
+          height: 400px;
+          margin: 0px 0px 0px 0px;
+
+        }
+    .devimgcls{
+      height: 500px;
+      width: 500px;
+      margin: 100px 20px;
+      position: fixed;
+      background-color: black;
+    }
+</style>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <!-- <div class="container" > -->
+          <div class="panel panel-default" id="tab1" style="width:200px">
+            <div class="panel-heading">Thought of the day.</div>
+            <div class="panel-body">Kafir hunu bhaanda marnu ramro</div>
+          </div>
+        <!-- </div> -->
+      </div>   
+    
+    <div class="col-md">
+      <div class="devimgcls">
+         <img id="devimg" src="{% static 'Developers.jpg'%}" alt="Developers">
+       </div>
+
+       
+    </div>
+    <div class="col-sm">
+      <!-- <div class="container"> -->
+        <div class="panel panel-default" id="tab2" style="width:200px">
+        <div class="panel-heading">Thought of the day.</div>
+        <div class="panel-body">Kafir hunu bhaanda marnu ramro</div>
+      </div>
+    <!-- </div>s -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
