@@ -98,6 +98,7 @@
           background-color: #99d5ff;
           color: black;
           text-align: center;
+          border: 1px solid black;
     }
     
     body {font-family: Arial, Helvetica, sans-serif;}
@@ -165,7 +166,7 @@
   <body>
     <!-- <h1>Administration</h1> -->
     <div class="navbaraaa" style="background-color: #99d5ff; height: 80px; padding-top: 8px; padding-left: 10px;">
-      <a class="navbar-brand" href="https://btech.mit.asia"><img src="{% static 'logo.jpg' %}" alt="" width="330" height="47.5" margin="me-auto"></a>
+      <a class="navbar-brand" href="https://btech.mit.asia" target="_blank"><img src="{% static 'logo.jpg' %}" alt="" width="330" height="47.5" margin="me-auto"></a>
       <!-- <a href="#" style="text-align: right;">Home</a>  -->
 
     </div>
@@ -181,15 +182,18 @@
 
       <!-- <p>Click on the buttons inside the tabbed menu:</p> -->
     
-      <div class="tab">
+      <div class="tab" style="height: 608px;">
         <button class="tablinks" onclick="openCity(event, 'Dashboard')" id="defaultOpen">Dashboard</button>
-        <button class="tablinks" onclick="openCity(event, 'Upload')">Upload</button>
-        <button class="tablinks" onclick="openCity(event, 'Monitor')">Monitor</button>
+        <button class="tablinks" onclick="openCity(event, 'Upload')">Upload Image</button>
+        <button class="tablinks" onclick="openCity(event, 'Monitor')">View uploaded Images</button>
+        <button class="tablinks" onclick="openCity(event, 'News')">News Feed</button>
+        <button class="tablinks" onclick="openCity(event, 'Events')">Current Events</button>
+
       </div>
       
       <div id="Dashboard" class="tabcontent">
         <div id="first">
-        <div id="chart_div" style="width: 700px; height: 350px;"></div>
+        <div id="chart_div" style="width: auto; height: 350px;"></div>
         </div>
         <!-- <div id="second">
           <iframe src="{% url 'calendar' %}"></iframe>
@@ -206,7 +210,7 @@
                 </h1>
                 <form action="" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{form}}
+                    {{form1}}
                     <input type="submit" class="btn btn-success" value="upload">
                 </form>
             </div>
@@ -216,6 +220,40 @@
       <div id="Monitor" class="tabcontent">
         <h1 style="color: blueviolet;"> Yet to be Made.</h1>
         <p>This element of admin panel serves the purpose of monitoring the data being uploaded, whether it is image, video, or any other relevant Detail.</p>
+      </div>
+
+      <div id="News" class="tabcontent">
+        <!-- <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>  -->
+        <div class="container" style="background-color: cadetblue;">
+            <div class="py-5 text-center text-white">
+                <h1 class="mb-3">
+                    NEWSFEED SECTION
+                </h1>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{form2}}
+                    <input type="submit" class="btn btn-success" value="upload">
+                </form>
+            </div>
+        </div>
+      </div>
+
+      <div id="Events" class="tabcontent">
+        <!-- <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>  -->
+        <div class="container">
+            <div class="py-5 text-center text-white" style="background-color: rgb(164, 164, 224);">
+                <h1 class="mb-3">
+                    Upload Image
+                </h1>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{form3}}
+                    <input type="submit" class="btn btn-success" value="upload">
+                </form>
+            </div>
+        </div>
       </div>
 
       <!-- footer  -->

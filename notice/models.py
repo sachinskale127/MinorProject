@@ -12,3 +12,18 @@ class Image(models.Model):
 
     def __str__(self):
         return self.img_name
+
+
+class newsfeed(models.Model):
+    title = models.CharField(max_length=100, default="")
+    news = models.CharField(max_length=1024, default="")
+
+    def __str__(self):
+        return self.title
+
+class currentevent(models.Model):
+        title = models.CharField(max_length=100, default="")
+        event = models.CharField(max_length=1024, default="")
+
+        def __str__(self):
+            return self.title
