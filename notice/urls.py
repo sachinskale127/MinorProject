@@ -12,6 +12,8 @@ urlpatterns = [
     path('ContactUs/', views.contact, name='contact'),
     path('test/', views.test, name='test'),
     path('add/', views.add_show, name='addandshow'),
+    path('delete/<int:id>/', views.delete_data, name='deletedata'),
+    path('<int:id>/', views.update_data, name='updatedata'),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
