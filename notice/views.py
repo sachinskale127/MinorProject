@@ -57,3 +57,5 @@ def test(request):
     params = {'product': image, 'number': no_of_image, 'dates':dates, 'times':times, 'currentevents':current, 'newsfeed':news}
     return render(request, 'test.html', params)
 
+def add_show(request):
+    return render(request, 'enroll/addandshow.html')
